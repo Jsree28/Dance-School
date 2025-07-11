@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - Elegance In Dance Academy</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fff2f2;
+    }
+
+    /* Heading */
+    h1 {
+      text-align: center;
+      margin: 30px 0 10px;
+      color: black; /* changed to black */
+    }
+
+    /* Navigation Bar */
+    .topnav {
+      background-color: #400303;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end; /* navbar items right aligned */
+      padding-right: 40px;
+    }
+
+    .topnav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .topnav a:hover {
+      background-color: #4d0505;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #121211;
+      color: white;
+    }
+
+    /* Contact Section */
+    .contact-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 40px;
+      max-width: 1100px;
+      margin: 30px auto;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form {
+      flex: 1;
+      min-width: 300px;
+      margin: 20px;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+      color: #4d0505;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      padding: 10px 20px;
+      background-color: #4d0505;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #6d1c1c;
+    }
+
+    .contact-info {
+      flex: 1;
+      min-width: 300px;
+      margin: 20px;
+    }
+
+    .contact-info h3 {
+      color: #4d0505;
+      margin-bottom: 15px;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .topnav {
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 10px;
+      }
+
+      .topnav a {
+        padding: 10px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Title -->
+  <center>
+    <h1>Elegance In Dance Academy</h1>
+  </center>
+
+  <!-- Navigation -->
+  <div class="topnav">
+    <a href="http://127.0.0.1:5500/Dancehome.html">Home</a>
+    <a href="http://127.0.0.1:5500/Danceblog.html">Blog</a>
+    <a class="active" href="#">Contact Us</a>
+    <a href="http://127.0.0.1:5500/Dancefeedback.html">Feedback</a>
+    <a href="http://127.0.0.1:5500/logindance.html">Join Us</a>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contact-container">
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Send a Message</h2>
+      <form action="#">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Info + Map -->
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p><strong>Address:</strong> Anna Street, Kalashetra Foundations</p>
+      <p><strong>Phone:</strong> +15555 55555</p>
+      <p><strong>Email:</strong> elegance@gmail.com</p>
+
+      <!-- Google Maps -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97127.2224444247!2d80.1699086!3d13.0210851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525dc09737a4ab%3A0x3342438ff7a61c4f!2sKalakshetra%20Foundation!5e0!3m2!1sen!2sin!4v1594819409215!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+
+</body>
+</html>
